@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(to right, #0f0f0f, #1f1f1f);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 4px solid #4fc3f7;
+      box-shadow: 0 0 20px rgba(79, 195, 247, 0.8);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 1rem;
+      text-shadow: 0 0 10px #4fc3f7;
+    }
+
+    p.subtitle {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #b0bec5;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: rgba(28, 28, 28, 0.8);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+      transition: transform 0.3s;
+    }
+
+    section:hover {
+      transform: scale(1.01);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #4fc3f7;
+      transition: text-shadow 0.3s ease-in-out;
+    }
+
+    section:target h2 {
+      text-shadow: 0 0 15px #00e5ff, 0 0 25px #00e5ff;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+
+    a {
+      color: #ffcc80;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #ff9800;
+    }
+
+    .projects a.github {
+      float: right;
+    }
+
+    .chart-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      opacity: 0.2;
+    }
+
+    canvas {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #777;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="chart-bg">
+    <canvas id="lineChart"></canvas>
+    <canvas id="barChart"></canvas>
+    <canvas id="scatterChart"></canvas>
+  </div>
+
+  <header>
+    <img src="profile.png" alt="Profile Picture">
+    <h1>Jivesh Dhurve</h1>
+    <p class="subtitle"> Management Consultant@TLM | Data Analyst | Python & SQL Enthusiast</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p> 
+ In a world awash with data, I believe the ability to listen to what data truly says is both an art and a science. Hi! I am Jivesh Dhurve, a data enthusiast who doesn’t just analyze numbers—I translate them into stories that inspire action.
+
+From scraping massive datasets to building sleek dashboards, I find joy in uncovering trends, identifying growth opportunities, and turning ambiguity into clarity. My journey—from being a curious intern at Hubnex Labs to solving real-world challenges and every insight, a purpose.
+
+Tools like Power BI, SQL, Excel, and Python are my brushes, and your business questions are the canvas. My approach is not just about accuracy and efficiency but also empathy—understanding the people behind the metrics.
+    </p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li>TLM - Management Consultant (Present)</li> 
+      <li>Hubnex Labs - Data Analytics Intern (March 2024 - September 2024)</li>
+    </ul>  
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p> Excel, SQL, Power BI, Tableau, Python, HTML, CSS, Js, Data Cleaning, Data Encoding , Data Visualization, Business Analysis</p>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        Weather Data analysis Using Python|Pandas
+        <a href="https://github.com/JiveshDhurve/python/blob/34c788eb04a2a0d353faa3ea1570676ca020ad4e/weatherdata.ipynb" class="github" target="_blank">GitHub</a>
+      </li>
+      <li>
+        Flipkart Data Scrapping Using Python|beautifulSoup|Requests|pandas
+        <a href="https://github.com/JiveshDhurve/python/blob/34c788eb04a2a0d353faa3ea1570676ca020ad4e/flipkart_multipage%20_datascrape%20-%20Copy.py" class="github" target="_blank">GitHub</a>
+      </li>
+      <li>
+        Amazon Prime Dashboard Using PowerBi
+        <a href="https://github.com/JiveshDhurve/powerBi-project/blob/78f8bf3781c1cb3d76a7abd7faaa007b6604e331/project1.pbix" class="github" target="_blank">GitHub</a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:jiveshdhurvey21@gmail.com">jiveshdhurvey21@gmail.com.com</a></p>
+    <p>LinkedIn: <a href="https://tinyurl.com/e7madejj" target="_blank">https://tinyurl.com/e7madejj</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 All rights reserved by Jivesh Dhurve
+  </footer>
+
+  <script>
+    const lineCanvas = document.getElementById('lineChart');
+    const barCanvas = document.getElementById('barChart');
+    const scatterCanvas = document.getElementById('scatterChart');
+
+    [lineCanvas, barCanvas, scatterCanvas].forEach(canvas => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+
+    const ctxLine = lineCanvas.getContext('2d');
+    const ctxBar = barCanvas.getContext('2d');
+    const ctxScatter = scatterCanvas.getContext('2d');
+
+    function drawLineChart() {
+      ctxLine.clearRect(0, 0, lineCanvas.width, lineCanvas.height);
+      ctxLine.beginPath();
+      ctxLine.strokeStyle = '#4fc3f7';
+      ctxLine.lineWidth = 2;
+      for (let i = 0; i < lineCanvas.width; i += 20) {
+        const y = Math.sin((i + Date.now() / 500) * 0.01) * 50 + lineCanvas.height / 2;
+        i === 0 ? ctxLine.moveTo(i, y) : ctxLine.lineTo(i, y);
+      }
+      ctxLine.shadowColor = '#4fc3f7';
+      ctxLine.shadowBlur = 15;
+      ctxLine.stroke();
+    }
+
+    function drawBarChart() {
+      ctxBar.clearRect(0, 0, barCanvas.width, barCanvas.height);
+      const barWidth = 30;
+      const spacing = 10;
+      const count = Math.floor(barCanvas.width / (barWidth + spacing));
+      for (let i = 0; i < count; i++) {
+        const height = Math.abs(Math.sin(Date.now() / 1500 + i)) * 120 + 40;
+        const x = i * (barWidth + spacing);
+        ctxBar.fillStyle = ['#ffcc80', '#ff9800', '#ffe0b2'][i % 3];
+        ctxBar.shadowColor = ctxBar.fillStyle;
+        ctxBar.shadowBlur = 10;
+        ctxBar.fillRect(x, barCanvas.height - height, barWidth, height);
+      }
+    }
+
+    let scatterPoints = Array.from({ length: 50 }, () => ({
+      x: Math.random() * window.innerWidth,
+      y: Math.random() * window.innerHeight,
+      vx: Math.random() * 0.5 - 0.25,
+      vy: Math.random() * 0.5 - 0.25
+    }));
+
+    function drawScatterChart() {
+      ctxScatter.clearRect(0, 0, scatterCanvas.width, scatterCanvas.height);
+      ctxScatter.fillStyle = '#ff9800';
+      scatterPoints.forEach(p => {
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.x < 0 || p.x > window.innerWidth) p.vx *= -1;
+        if (p.y < 0 || p.y > window.innerHeight) p.vy *= -1;
+        ctxScatter.beginPath();
+        ctxScatter.arc(p.x, p.y, 3, 0, Math.PI * 2);
+        ctxScatter.fill();
+      });
+    }
+
+    function animateCharts() {
+      drawLineChart();
+      drawBarChart();
+      drawScatterChart();
+      requestAnimationFrame(animateCharts);
+    }
+
+    animateCharts();
+  </script>
+</body>
+</html>
